@@ -11,7 +11,12 @@ export function SideNav({onClick}) {
             <ul className="sidenav-list">
                 {genreList.map(item => (
                     <li key={item.id}>
-                        <button onClick={() => {onClick(item.genre)}} className="sidenav-button">{item.genre}</button>
+                        <button 
+                            onClick={() => {onClick(item.genre)}} 
+                            className="sidenav-button"
+                        >
+                            {item.genre}
+                        </button>
                     </li>
                 ))}
             </ul>

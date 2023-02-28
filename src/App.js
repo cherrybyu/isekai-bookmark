@@ -2,6 +2,7 @@
 import './App.css';
 import {Bookshelf} from "./practice.js"
 import {SideNav} from "./sidenav.js"
+import {NavBar} from "./navbar.js"
 import { useState } from "react"
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
   
   return (
     <div className="App">
-      <header className="App-header">Isekai Bookmark</header>
+      <header className="App-header">
+        <h3>Isekai Bookmark</h3>
+        <NavBar />
+      </header>
       <div className="main">
         <SideNav onClick = {handleClicked}/>
         <div className="library">

@@ -4,9 +4,44 @@
   text-align: center;
 }
 
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 16px 0px 16px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  
+}
+
+ul > li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+}
+
 .main {
   display: flex;
   flex-direction: row;
+}
+
+.sidenav {
+  width: 15%;
+}
+
+.sidenav-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav-button {
+  font-size: 24px;
+  width: 100%;
+  padding: 16px;
 }
 
 .library {
@@ -19,6 +54,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.bookshelf {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
 }
 
 .book-img {
@@ -48,25 +89,4 @@
   height: 240px;
 }
 
-.bookshelf {
-  display: flex;
-  gap: 16px;
-  font-size: 12px;
-}
 
-.sidenav {
-  width: 15%;
-}
-
-.sidenav-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-.sidenav-button {
-  font-size: 24px;
-  width: 100%;
-  padding: 16px;
-}
