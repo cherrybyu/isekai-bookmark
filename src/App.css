@@ -1,40 +1,24 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.library {
+  background-color: #282c34;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .book-img {
@@ -70,6 +54,19 @@
   font-size: 12px;
 }
 
-.completed {
-  color:green
+.sidenav {
+  width: 15%;
+}
+
+.sidenav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sidenav-button {
+  font-size: 24px;
+  width: 100%;
+  padding: 16px;
 }
